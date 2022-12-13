@@ -9,3 +9,14 @@ D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInputs.cache
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.exe
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.pdb
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmDangNhap.resources
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\bin\Debug\QLST.exe.config
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\bin\Debug\QLST.exe
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\bin\Debug\QLST.pdb
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmDangNhap.resources
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.Properties.Resources.resources
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.exe
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.pdb
