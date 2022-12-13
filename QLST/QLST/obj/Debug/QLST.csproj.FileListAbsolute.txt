@@ -1,0 +1,11 @@
+D:\DA_CNPM\QLST\QLST\bin\Debug\QLST.exe.config
+D:\DA_CNPM\QLST\QLST\bin\Debug\QLST.exe
+D:\DA_CNPM\QLST\QLST\bin\Debug\QLST.pdb
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.csproj.AssemblyReference.cache
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.csproj.SuggestedBindingRedirects.cache
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.Properties.Resources.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.csproj.GenerateResource.cache
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInputs.cache
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.exe
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.pdb
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmDangNhap.resources
