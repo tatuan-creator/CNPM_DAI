@@ -36,6 +36,9 @@ namespace QLST.Models
     partial void InsertNguoiDung(NguoiDung instance);
     partial void UpdateNguoiDung(NguoiDung instance);
     partial void DeleteNguoiDung(NguoiDung instance);
+    partial void InsertNhoMK(NhoMK instance);
+    partial void UpdateNhoMK(NhoMK instance);
+    partial void DeleteNhoMK(NhoMK instance);
     #endregion
 		
 		public QLSTDataDataContext() : 
@@ -81,6 +84,14 @@ namespace QLST.Models
 			get
 			{
 				return this.GetTable<NguoiDung>();
+			}
+		}
+		
+		public System.Data.Linq.Table<NhoMK> NhoMKs
+		{
+			get
+			{
+				return this.GetTable<NhoMK>();
 			}
 		}
 	}
@@ -373,6 +384,92 @@ namespace QLST.Models
 						this._ChucVu = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("ChucVu1");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NhoMK")]
+	public partial class NhoMK : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _TDN;
+		
+		private string _MK;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnTDNChanging(string value);
+    partial void OnTDNChanged();
+    partial void OnMKChanging(string value);
+    partial void OnMKChanged();
+    #endregion
+		
+		public NhoMK()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TDN", DbType="VarChar(100) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string TDN
+		{
+			get
+			{
+				return this._TDN;
+			}
+			set
+			{
+				if ((this._TDN != value))
+				{
+					this.OnTDNChanging(value);
+					this.SendPropertyChanging();
+					this._TDN = value;
+					this.SendPropertyChanged("TDN");
+					this.OnTDNChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MK", DbType="VarChar(100)")]
+		public string MK
+		{
+			get
+			{
+				return this._MK;
+			}
+			set
+			{
+				if ((this._MK != value))
+				{
+					this.OnMKChanging(value);
+					this.SendPropertyChanging();
+					this._MK = value;
+					this.SendPropertyChanged("MK");
+					this.OnMKChanged();
 				}
 			}
 		}

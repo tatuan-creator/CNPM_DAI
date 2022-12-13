@@ -17,4 +17,10 @@
       <Association Name="ChucVu_NguoiDung" Member="ChucVu1" ThisKey="ChucVu" OtherKey="MaChucVu" Type="ChucVu" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.NhoMK" Member="NhoMKs">
+    <Type Name="NhoMK">
+      <Column Name="TDN" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MK" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

@@ -50,5 +50,19 @@ namespace QLST
         {
             
         }
+
+        private void picshow_Click(object sender, EventArgs e)
+        {
+            txtMatKhau.PasswordChar = '\0';
+            pichide.Visible = true;
+            picshow.Visible = false;
+        }
+
+        private void pichide_Click(object sender, EventArgs e)
+        {
+            txtMatKhau.PasswordChar = '*';
+            pichide.Visible = false;
+            picshow.Visible = true;
+        }
     }
 }
