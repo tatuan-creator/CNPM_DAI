@@ -40,6 +40,7 @@
             this.picClose = new System.Windows.Forms.PictureBox();
             this.picshow = new System.Windows.Forms.PictureBox();
             this.pichide = new System.Windows.Forms.PictureBox();
+            this.cbxRemember = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
@@ -105,7 +106,7 @@
             this.btnDangNhap.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(276, 278);
+            this.btnDangNhap.Location = new System.Drawing.Point(276, 287);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(155, 38);
@@ -175,6 +176,16 @@
             this.pichide.Visible = false;
             this.pichide.Click += new System.EventHandler(this.pichide_Click);
             // 
+            // cbxRemember
+            // 
+            this.cbxRemember.AutoSize = true;
+            this.cbxRemember.Location = new System.Drawing.Point(276, 253);
+            this.cbxRemember.Name = "cbxRemember";
+            this.cbxRemember.Size = new System.Drawing.Size(111, 20);
+            this.cbxRemember.TabIndex = 11;
+            this.cbxRemember.Text = "Nhớ mật khẩu";
+            this.cbxRemember.UseVisualStyleBackColor = true;
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,6 +193,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(671, 404);
+            this.Controls.Add(this.cbxRemember);
             this.Controls.Add(this.pichide);
             this.Controls.Add(this.picshow);
             this.Controls.Add(this.picClose);
@@ -221,5 +233,6 @@
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.PictureBox picshow;
         private System.Windows.Forms.PictureBox pichide;
+        private System.Windows.Forms.CheckBox cbxRemember;
     }
 }

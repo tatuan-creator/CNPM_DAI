@@ -20,3 +20,4 @@ C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.GenerateResour
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.exe
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.pdb
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmMain.resources

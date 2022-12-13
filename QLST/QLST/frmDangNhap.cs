@@ -17,6 +17,17 @@ namespace QLST
         public frmDangNhap()
         {
             InitializeComponent();
+            var nho = context.NhoMKs.SingleOrDefault();
+            if(nho == null)
+            {
+                cbxRemember.Checked = false;
+            }
+            else
+            {
+                txtTenDangNhap.Text = nho.TDN;
+                txtMatKhau.Text = nho.MK;
+                cbxRemember.Checked = true;
+            }
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -43,12 +54,35 @@ namespace QLST
                     MessageBox.Show("Sai mật khẩu !!!", "Cảnh báo",MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
+                else
+                {
+                    if(cbxRemember.Checked == true)
+                    {
+                        NhoMK nho = new NhoMK();
+                        nho.TDN = check.IDNhanVien;
+                        nho.MK = check.MatKhau;
+                        context.NhoMKs.InsertOnSubmit(nho);
+                        context.SubmitChanges();
+                    }
+                    else
+                    {
+                        var nho = context.NhoMKs.SingleOrDefault();
+                        if(nho != null)
+                        {
+                            context.NhoMKs.DeleteOnSubmit(nho);
+                            context.SubmitChanges();
+                        }
+                    }
+                    frmMain frm = new frmMain(check.IDNhanVien);
+                    frm.Show();
+                    this.Hide();
+                }
             }
         }
 
         private void picClose_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void picshow_Click(object sender, EventArgs e)
