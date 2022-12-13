@@ -45,5 +45,10 @@ namespace QLST
                 }
             }
         }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -37,8 +37,14 @@
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picClose = new System.Windows.Forms.PictureBox();
+            this.picshow = new System.Windows.Forms.PictureBox();
+            this.pichide = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picshow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pichide)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +87,7 @@
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.Location = new System.Drawing.Point(207, 115);
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(163, 26);
             this.txtTenDangNhap.TabIndex = 3;
@@ -91,7 +97,7 @@
             this.txtMatKhau.BackColor = System.Drawing.Color.White;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(207, 167);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(163, 26);
@@ -103,7 +109,7 @@
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
             this.btnDangNhap.Location = new System.Drawing.Point(207, 226);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(116, 31);
             this.btnDangNhap.TabIndex = 5;
@@ -131,6 +137,39 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // picClose
+            // 
+            this.picClose.BackColor = System.Drawing.Color.Transparent;
+            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
+            this.picClose.Location = new System.Drawing.Point(454, 10);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(37, 31);
+            this.picClose.TabIndex = 8;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
+            // picshow
+            // 
+            this.picshow.BackColor = System.Drawing.Color.Transparent;
+            this.picshow.Image = ((System.Drawing.Image)(resources.GetObject("picshow.Image")));
+            this.picshow.Location = new System.Drawing.Point(389, 167);
+            this.picshow.Name = "picshow";
+            this.picshow.Size = new System.Drawing.Size(25, 26);
+            this.picshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picshow.TabIndex = 9;
+            this.picshow.TabStop = false;
+            // 
+            // pichide
+            // 
+            this.pichide.BackColor = System.Drawing.Color.Transparent;
+            this.pichide.Image = ((System.Drawing.Image)(resources.GetObject("pichide.Image")));
+            this.pichide.Location = new System.Drawing.Point(420, 167);
+            this.pichide.Name = "pichide";
+            this.pichide.Size = new System.Drawing.Size(25, 27);
+            this.pichide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pichide.TabIndex = 10;
+            this.pichide.TabStop = false;
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +177,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 328);
+            this.Controls.Add(this.pichide);
+            this.Controls.Add(this.picshow);
+            this.Controls.Add(this.picClose);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnDangNhap);
@@ -147,12 +189,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picshow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pichide)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +213,8 @@
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picClose;
+        private System.Windows.Forms.PictureBox picshow;
+        private System.Windows.Forms.PictureBox pichide;
     }
 }
