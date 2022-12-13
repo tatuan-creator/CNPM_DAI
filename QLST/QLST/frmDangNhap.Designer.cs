@@ -53,9 +53,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 12);
+            this.label1.Location = new System.Drawing.Point(59, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(478, 95);
+            this.label1.Size = new System.Drawing.Size(383, 75);
             this.label1.TabIndex = 0;
             this.label1.Text = "ASTOP mini mart";
             // 
@@ -64,9 +65,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 145);
+            this.label2.Location = new System.Drawing.Point(64, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 25);
+            this.label2.Size = new System.Drawing.Size(129, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên đăng nhập";
             // 
@@ -75,30 +77,31 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(91, 213);
+            this.label3.Location = new System.Drawing.Point(68, 173);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 25);
+            this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu";
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(276, 142);
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(207, 115);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(216, 30);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(163, 26);
             this.txtTenDangNhap.TabIndex = 3;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.BackColor = System.Drawing.Color.White;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(276, 206);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMatKhau.Location = new System.Drawing.Point(207, 167);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(216, 30);
+            this.txtMatKhau.Size = new System.Drawing.Size(163, 26);
             this.txtMatKhau.TabIndex = 4;
             // 
             // btnDangNhap
@@ -106,10 +109,10 @@
             this.btnDangNhap.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(276, 287);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDangNhap.Location = new System.Drawing.Point(207, 233);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(155, 38);
+            this.btnDangNhap.Size = new System.Drawing.Size(116, 31);
             this.btnDangNhap.TabIndex = 5;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -119,10 +122,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(32, 130);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 106);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -130,10 +132,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(32, 202);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(24, 164);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 36);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 29);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
@@ -141,22 +142,20 @@
             // 
             this.picClose.BackColor = System.Drawing.Color.Transparent;
             this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(605, 12);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picClose.Location = new System.Drawing.Point(454, 10);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(49, 38);
+            this.picClose.Size = new System.Drawing.Size(37, 31);
             this.picClose.TabIndex = 8;
             this.picClose.TabStop = false;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // picshow
             // 
-            this.picshow.BackColor = System.Drawing.Color.Transparent;
+            this.picshow.BackColor = System.Drawing.Color.White;
             this.picshow.Image = ((System.Drawing.Image)(resources.GetObject("picshow.Image")));
-            this.picshow.Location = new System.Drawing.Point(499, 206);
-            this.picshow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picshow.Location = new System.Drawing.Point(345, 168);
             this.picshow.Name = "picshow";
-            this.picshow.Size = new System.Drawing.Size(33, 32);
+            this.picshow.Size = new System.Drawing.Size(25, 25);
             this.picshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picshow.TabIndex = 9;
             this.picshow.TabStop = false;
@@ -164,12 +163,11 @@
             // 
             // pichide
             // 
-            this.pichide.BackColor = System.Drawing.Color.Transparent;
+            this.pichide.BackColor = System.Drawing.Color.White;
             this.pichide.Image = ((System.Drawing.Image)(resources.GetObject("pichide.Image")));
-            this.pichide.Location = new System.Drawing.Point(499, 206);
-            this.pichide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pichide.Location = new System.Drawing.Point(345, 168);
             this.pichide.Name = "pichide";
-            this.pichide.Size = new System.Drawing.Size(33, 33);
+            this.pichide.Size = new System.Drawing.Size(25, 25);
             this.pichide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pichide.TabIndex = 10;
             this.pichide.TabStop = false;
@@ -179,20 +177,24 @@
             // cbxRemember
             // 
             this.cbxRemember.AutoSize = true;
-            this.cbxRemember.Location = new System.Drawing.Point(276, 253);
+            this.cbxRemember.BackColor = System.Drawing.Color.Transparent;
+            this.cbxRemember.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRemember.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cbxRemember.Location = new System.Drawing.Point(207, 206);
+            this.cbxRemember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxRemember.Name = "cbxRemember";
-            this.cbxRemember.Size = new System.Drawing.Size(111, 20);
+            this.cbxRemember.Size = new System.Drawing.Size(123, 23);
             this.cbxRemember.TabIndex = 11;
             this.cbxRemember.Text = "Nhớ mật khẩu";
-            this.cbxRemember.UseVisualStyleBackColor = true;
+            this.cbxRemember.UseVisualStyleBackColor = false;
             // 
             // frmDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(671, 404);
+            this.ClientSize = new System.Drawing.Size(503, 328);
             this.Controls.Add(this.cbxRemember);
             this.Controls.Add(this.pichide);
             this.Controls.Add(this.picshow);
@@ -206,7 +208,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
