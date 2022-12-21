@@ -23,9 +23,9 @@ C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.pdb
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmMain.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatKH.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatMK.resources
-D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatNV.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatSP.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmGiaodien.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmNCC.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmNhapPhieuTra.resources
 D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmPhieuNhap.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmThemNV.resources

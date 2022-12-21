@@ -7,6 +7,12 @@
       <Association Name="ChucVu_NguoiDung" Member="NguoiDungs" ThisKey="MaChucVu" OtherKey="ChucVu" Type="NguoiDung" />
     </Type>
   </Table>
+  <Table Name="dbo.NhoMK" Member="NhoMKs">
+    <Type Name="NhoMK">
+      <Column Name="TDN" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MK" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.NguoiDung" Member="NguoiDungs">
     <Type Name="NguoiDung">
       <Column Name="IDNhanVien" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -14,13 +20,10 @@
       <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="MatKhau" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="ChucVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayVaoLam" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Association Name="ChucVu_NguoiDung" Member="ChucVu1" ThisKey="ChucVu" OtherKey="MaChucVu" Type="ChucVu" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.NhoMK" Member="NhoMKs">
-    <Type Name="NhoMK">
-      <Column Name="TDN" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MK" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
