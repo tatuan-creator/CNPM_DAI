@@ -47,17 +47,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCapnhatKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapnhatKH.Designer.cs">
+      <DependentUpon>frmCapnhatKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapnhatMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapnhatMK.Designer.cs">
+      <DependentUpon>frmCapnhatMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapnhatNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapnhatNV.Designer.cs">
+      <DependentUpon>frmCapnhatNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapnhatSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapnhatSP.Designer.cs">
+      <DependentUpon>frmCapnhatSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="frmGiaodien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="frmGiaodien.Designer.cs">
+      <DependentUpon>frmGiaodien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNCC.Designer.cs">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapPhieuTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapPhieuTra.Designer.cs">
+      <DependentUpon>frmNhapPhieuTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\QLSTData.designer.cs">
       <AutoGen>True</AutoGen>
@@ -66,11 +108,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCapnhatKH.resx">
+      <DependentUpon>frmCapnhatKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCapnhatMK.resx">
+      <DependentUpon>frmCapnhatMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCapnhatNV.resx">
+      <DependentUpon>frmCapnhatNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCapnhatSP.resx">
+      <DependentUpon>frmCapnhatSP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="frmGiaodien.resx">
+      <DependentUpon>frmGiaodien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNCC.resx">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapPhieuTra.resx">
+      <DependentUpon>frmNhapPhieuTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -56,9 +56,9 @@
             this.label1.Location = new System.Drawing.Point(59, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 75);
+            this.label1.Size = new System.Drawing.Size(393, 75);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ASTOP mini mart";
+            this.label1.Text = "A\'STOP mini mart";
             // 
             // label2
             // 
@@ -88,7 +88,7 @@
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.Location = new System.Drawing.Point(207, 115);
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(163, 26);
             this.txtTenDangNhap.TabIndex = 3;
@@ -98,7 +98,7 @@
             this.txtMatKhau.BackColor = System.Drawing.Color.White;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(207, 167);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(163, 26);
@@ -110,7 +110,7 @@
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
             this.btnDangNhap.Location = new System.Drawing.Point(207, 233);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(116, 31);
             this.btnDangNhap.TabIndex = 5;
@@ -181,7 +181,7 @@
             this.cbxRemember.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxRemember.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxRemember.Location = new System.Drawing.Point(207, 206);
-            this.cbxRemember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxRemember.Margin = new System.Windows.Forms.Padding(2);
             this.cbxRemember.Name = "cbxRemember";
             this.cbxRemember.Size = new System.Drawing.Size(123, 23);
             this.cbxRemember.TabIndex = 11;
@@ -194,7 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(503, 328);
+            this.ClientSize = new System.Drawing.Size(500, 302);
             this.Controls.Add(this.cbxRemember);
             this.Controls.Add(this.pichide);
             this.Controls.Add(this.picshow);
@@ -208,7 +208,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";

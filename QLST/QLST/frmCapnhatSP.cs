@@ -10,14 +10,9 @@ using System.Windows.Forms;
 
 namespace QLST
 {
-    public partial class frmMain : Form
+    public partial class frmCapnhatSP : Form
     {
-        public frmMain()
-        {
-            InitializeComponent();
-        }
-
-        public frmMain(string user)
+        public frmCapnhatSP()
         {
             InitializeComponent();
         }
