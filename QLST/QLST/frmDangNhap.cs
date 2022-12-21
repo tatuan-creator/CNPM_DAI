@@ -56,7 +56,7 @@ namespace QLST
                 }
                 else
                 {
-                    if(cbxRemember.Checked == true)
+                    if(cbxRemember.Checked == true && context.NhoMKs.SingleOrDefault()==null)
                     {
                         NhoMK nho = new NhoMK();
                         nho.TDN = check.IDNhanVien;
@@ -73,7 +73,7 @@ namespace QLST
                             context.SubmitChanges();
                         }
                     }
-                    frmMain frm = new frmMain(check.IDNhanVien);
+                    frmGiaodien frm = new frmGiaodien(check.IDNhanVien);
                     frm.Show();
                     this.Hide();
                 }

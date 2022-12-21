@@ -20,5 +20,12 @@ C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.GenerateResour
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.exe
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.pdb
-D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmMain.resources
 C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmMain.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatKH.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatMK.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatNV.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmCapnhatSP.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmGiaodien.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmNCC.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmNhapPhieuTra.resources
+D:\DA_CNPM\QLST\QLST\obj\Debug\QLST.frmPhieuNhap.resources
