@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace QLST
 {
-    public partial class frmCapnhatMK : Form
+    public partial class frmDoiMK : Form
     {
-        public frmCapnhatMK()
+        public frmDoiMK()
         {
             InitializeComponent();
+        }
+
+        private void pibBack2_Click(object sender, EventArgs e)
+        {
+            frmGiaodien obj = new frmGiaodien();
+            obj.Show();
+            this.Hide();
         }
     }
 }

@@ -35,5 +35,29 @@ namespace QLST
                 
             }
         }
+
+        private void CashierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThuNgan obj = new frmThuNgan();  
+            obj.Show();
+            this.Hide();
+        }
+
+        private void NCCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void ChangePWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoiMK obj = new frmDoiMK();  
+            obj.Show();
+            this.Hide();    
+        }
     }
 }

@@ -53,11 +53,11 @@
     <Compile Include="frmCapnhatKH.Designer.cs">
       <DependentUpon>frmCapnhatKH.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCapnhatMK.cs">
+    <Compile Include="frmDoiMK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCapnhatMK.Designer.cs">
-      <DependentUpon>frmCapnhatMK.cs</DependentUpon>
+    <Compile Include="frmDoiMK.Designer.cs">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThemNV.cs">
       <SubType>Form</SubType>
@@ -101,6 +101,12 @@
     <Compile Include="frmPhieuNhap.Designer.cs">
       <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThuNgan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThuNgan.Designer.cs">
+      <DependentUpon>frmThuNgan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\QLSTData.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,8 +122,8 @@
     <EmbeddedResource Include="frmCapnhatKH.resx">
       <DependentUpon>frmCapnhatKH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCapnhatMK.resx">
-      <DependentUpon>frmCapnhatMK.cs</DependentUpon>
+    <EmbeddedResource Include="frmDoiMK.resx">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemNV.resx">
       <DependentUpon>frmThemNV.cs</DependentUpon>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuNhap.resx">
       <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThuNgan.resx">
+      <DependentUpon>frmThuNgan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
