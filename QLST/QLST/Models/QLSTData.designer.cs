@@ -22,7 +22,7 @@ namespace QLST.Models
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLSL")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLST")]
 	public partial class QLSTDataDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -30,19 +30,16 @@ namespace QLST.Models
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertChucVu(ChucVu instance);
-    partial void UpdateChucVu(ChucVu instance);
-    partial void DeleteChucVu(ChucVu instance);
-    partial void InsertNhoMK(NhoMK instance);
-    partial void UpdateNhoMK(NhoMK instance);
-    partial void DeleteNhoMK(NhoMK instance);
+    partial void InsertChucVuNV(ChucVuNV instance);
+    partial void UpdateChucVuNV(ChucVuNV instance);
+    partial void DeleteChucVuNV(ChucVuNV instance);
     partial void InsertNguoiDung(NguoiDung instance);
     partial void UpdateNguoiDung(NguoiDung instance);
     partial void DeleteNguoiDung(NguoiDung instance);
     #endregion
 		
 		public QLSTDataDataContext() : 
-				base(global::QLST.Properties.Settings.Default.QLSLConnectionString, mappingSource)
+				base(global::QLST.Properties.Settings.Default.QLSTConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -71,19 +68,11 @@ namespace QLST.Models
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<ChucVu> ChucVus
+		public System.Data.Linq.Table<ChucVuNV> ChucVuNVs
 		{
 			get
 			{
-				return this.GetTable<ChucVu>();
-			}
-		}
-		
-		public System.Data.Linq.Table<NhoMK> NhoMKs
-		{
-			get
-			{
-				return this.GetTable<NhoMK>();
+				return this.GetTable<ChucVuNV>();
 			}
 		}
 		
@@ -96,13 +85,13 @@ namespace QLST.Models
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChucVu")]
-	public partial class ChucVu : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChucVuNV")]
+	public partial class ChucVuNV : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _MaChucVu;
+		private int _IDChucVu;
 		
 		private string _TenChucVu;
 		
@@ -112,39 +101,39 @@ namespace QLST.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaChucVuChanging(int value);
-    partial void OnMaChucVuChanged();
+    partial void OnIDChucVuChanging(int value);
+    partial void OnIDChucVuChanged();
     partial void OnTenChucVuChanging(string value);
     partial void OnTenChucVuChanged();
     #endregion
 		
-		public ChucVu()
+		public ChucVuNV()
 		{
 			this._NguoiDungs = new EntitySet<NguoiDung>(new Action<NguoiDung>(this.attach_NguoiDungs), new Action<NguoiDung>(this.detach_NguoiDungs));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaChucVu", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaChucVu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDChucVu", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int IDChucVu
 		{
 			get
 			{
-				return this._MaChucVu;
+				return this._IDChucVu;
 			}
 			set
 			{
-				if ((this._MaChucVu != value))
+				if ((this._IDChucVu != value))
 				{
-					this.OnMaChucVuChanging(value);
+					this.OnIDChucVuChanging(value);
 					this.SendPropertyChanging();
-					this._MaChucVu = value;
-					this.SendPropertyChanged("MaChucVu");
-					this.OnMaChucVuChanged();
+					this._IDChucVu = value;
+					this.SendPropertyChanged("IDChucVu");
+					this.OnIDChucVuChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenChucVu", DbType="NVarChar(100)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenChucVu", DbType="VarChar(100)")]
 		public string TenChucVu
 		{
 			get
@@ -164,7 +153,7 @@ namespace QLST.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVu_NguoiDung", Storage="_NguoiDungs", ThisKey="MaChucVu", OtherKey="ChucVu")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVuNV_NguoiDung", Storage="_NguoiDungs", ThisKey="IDChucVu", OtherKey="ChucVu")]
 		public EntitySet<NguoiDung> NguoiDungs
 		{
 			get
@@ -200,99 +189,13 @@ namespace QLST.Models
 		private void attach_NguoiDungs(NguoiDung entity)
 		{
 			this.SendPropertyChanging();
-			entity.ChucVu1 = this;
+			entity.ChucVuNV = this;
 		}
 		
 		private void detach_NguoiDungs(NguoiDung entity)
 		{
 			this.SendPropertyChanging();
-			entity.ChucVu1 = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NhoMK")]
-	public partial class NhoMK : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _TDN;
-		
-		private string _MK;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnTDNChanging(string value);
-    partial void OnTDNChanged();
-    partial void OnMKChanging(string value);
-    partial void OnMKChanged();
-    #endregion
-		
-		public NhoMK()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TDN", DbType="VarChar(100) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string TDN
-		{
-			get
-			{
-				return this._TDN;
-			}
-			set
-			{
-				if ((this._TDN != value))
-				{
-					this.OnTDNChanging(value);
-					this.SendPropertyChanging();
-					this._TDN = value;
-					this.SendPropertyChanged("TDN");
-					this.OnTDNChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MK", DbType="VarChar(100)")]
-		public string MK
-		{
-			get
-			{
-				return this._MK;
-			}
-			set
-			{
-				if ((this._MK != value))
-				{
-					this.OnMKChanging(value);
-					this.SendPropertyChanging();
-					this._MK = value;
-					this.SendPropertyChanged("MK");
-					this.OnMKChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
+			entity.ChucVuNV = null;
 		}
 	}
 	
@@ -302,13 +205,11 @@ namespace QLST.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _IDNhanVien;
+		private int _IDNhanVien;
 		
-		private string _Ten;
+		private string _HoTen;
 		
 		private System.Nullable<System.DateTime> _NgaySinh;
-		
-		private string _MatKhau;
 		
 		private System.Nullable<int> _ChucVu;
 		
@@ -318,20 +219,22 @@ namespace QLST.Models
 		
 		private System.Nullable<System.DateTime> _NgayVaoLam;
 		
-		private EntityRef<ChucVu> _ChucVu1;
+		private string _TaiKhoan;
+		
+		private string _MatKhau;
+		
+		private EntityRef<ChucVuNV> _ChucVuNV;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIDNhanVienChanging(string value);
+    partial void OnIDNhanVienChanging(int value);
     partial void OnIDNhanVienChanged();
-    partial void OnTenChanging(string value);
-    partial void OnTenChanged();
+    partial void OnHoTenChanging(string value);
+    partial void OnHoTenChanged();
     partial void OnNgaySinhChanging(System.Nullable<System.DateTime> value);
     partial void OnNgaySinhChanged();
-    partial void OnMatKhauChanging(string value);
-    partial void OnMatKhauChanged();
     partial void OnChucVuChanging(System.Nullable<int> value);
     partial void OnChucVuChanged();
     partial void OnLuongChanging(System.Nullable<double> value);
@@ -340,16 +243,20 @@ namespace QLST.Models
     partial void OnGioiTinhChanged();
     partial void OnNgayVaoLamChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayVaoLamChanged();
+    partial void OnTaiKhoanChanging(string value);
+    partial void OnTaiKhoanChanged();
+    partial void OnMatKhauChanging(string value);
+    partial void OnMatKhauChanged();
     #endregion
 		
 		public NguoiDung()
 		{
-			this._ChucVu1 = default(EntityRef<ChucVu>);
+			this._ChucVuNV = default(EntityRef<ChucVuNV>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDNhanVien", DbType="VarChar(100) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string IDNhanVien
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDNhanVien", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int IDNhanVien
 		{
 			get
 			{
@@ -368,22 +275,22 @@ namespace QLST.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ten", DbType="NVarChar(100)")]
-		public string Ten
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTen", DbType="NVarChar(100)")]
+		public string HoTen
 		{
 			get
 			{
-				return this._Ten;
+				return this._HoTen;
 			}
 			set
 			{
-				if ((this._Ten != value))
+				if ((this._HoTen != value))
 				{
-					this.OnTenChanging(value);
+					this.OnHoTenChanging(value);
 					this.SendPropertyChanging();
-					this._Ten = value;
-					this.SendPropertyChanged("Ten");
-					this.OnTenChanged();
+					this._HoTen = value;
+					this.SendPropertyChanged("HoTen");
+					this.OnHoTenChanged();
 				}
 			}
 		}
@@ -408,26 +315,6 @@ namespace QLST.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatKhau", DbType="VarChar(100)")]
-		public string MatKhau
-		{
-			get
-			{
-				return this._MatKhau;
-			}
-			set
-			{
-				if ((this._MatKhau != value))
-				{
-					this.OnMatKhauChanging(value);
-					this.SendPropertyChanging();
-					this._MatKhau = value;
-					this.SendPropertyChanged("MatKhau");
-					this.OnMatKhauChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ChucVu", DbType="Int")]
 		public System.Nullable<int> ChucVu
 		{
@@ -439,7 +326,7 @@ namespace QLST.Models
 			{
 				if ((this._ChucVu != value))
 				{
-					if (this._ChucVu1.HasLoadedOrAssignedValue)
+					if (this._ChucVuNV.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -492,7 +379,7 @@ namespace QLST.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayVaoLam", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayVaoLam", DbType="Date")]
 		public System.Nullable<System.DateTime> NgayVaoLam
 		{
 			get
@@ -512,36 +399,76 @@ namespace QLST.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVu_NguoiDung", Storage="_ChucVu1", ThisKey="ChucVu", OtherKey="MaChucVu", IsForeignKey=true)]
-		public ChucVu ChucVu1
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TaiKhoan", DbType="VarChar(100)")]
+		public string TaiKhoan
 		{
 			get
 			{
-				return this._ChucVu1.Entity;
+				return this._TaiKhoan;
 			}
 			set
 			{
-				ChucVu previousValue = this._ChucVu1.Entity;
+				if ((this._TaiKhoan != value))
+				{
+					this.OnTaiKhoanChanging(value);
+					this.SendPropertyChanging();
+					this._TaiKhoan = value;
+					this.SendPropertyChanged("TaiKhoan");
+					this.OnTaiKhoanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatKhau", DbType="VarChar(100)")]
+		public string MatKhau
+		{
+			get
+			{
+				return this._MatKhau;
+			}
+			set
+			{
+				if ((this._MatKhau != value))
+				{
+					this.OnMatKhauChanging(value);
+					this.SendPropertyChanging();
+					this._MatKhau = value;
+					this.SendPropertyChanged("MatKhau");
+					this.OnMatKhauChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVuNV_NguoiDung", Storage="_ChucVuNV", ThisKey="ChucVu", OtherKey="IDChucVu", IsForeignKey=true)]
+		public ChucVuNV ChucVuNV
+		{
+			get
+			{
+				return this._ChucVuNV.Entity;
+			}
+			set
+			{
+				ChucVuNV previousValue = this._ChucVuNV.Entity;
 				if (((previousValue != value) 
-							|| (this._ChucVu1.HasLoadedOrAssignedValue == false)))
+							|| (this._ChucVuNV.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._ChucVu1.Entity = null;
+						this._ChucVuNV.Entity = null;
 						previousValue.NguoiDungs.Remove(this);
 					}
-					this._ChucVu1.Entity = value;
+					this._ChucVuNV.Entity = value;
 					if ((value != null))
 					{
 						value.NguoiDungs.Add(this);
-						this._ChucVu = value.MaChucVu;
+						this._ChucVu = value.IDChucVu;
 					}
 					else
 					{
 						this._ChucVu = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("ChucVu1");
+					this.SendPropertyChanged("ChucVuNV");
 				}
 			}
 		}

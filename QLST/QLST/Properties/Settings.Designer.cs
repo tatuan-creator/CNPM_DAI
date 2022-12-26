@@ -32,5 +32,15 @@ namespace QLST.Properties {
                 return ((string)(this["QLSLConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-PFSAV4HU;Initial Catalog=QLST;Integrated Security=True")]
+        public string QLSTConnectionString {
+            get {
+                return ((string)(this["QLSTConnectionString"]));
+            }
+        }
     }
 }
