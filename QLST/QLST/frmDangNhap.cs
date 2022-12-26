@@ -17,15 +17,15 @@ namespace QLST
         public frmDangNhap()
         {
             InitializeComponent();
-            var nho = context.NhoMKs.SingleOrDefault();
+            var nho = context.NguoiDungs.SingleOrDefault(p => p.NhoMK == 1);
             if(nho == null)
             {
                 cbxRemember.Checked = false;
             }
             else
             {
-                txtTenDangNhap.Text = nho.TDN;
-                txtMatKhau.Text = nho.MK;
+                txtTenDangNhap.Text = nho.TaiKhoan;
+                txtMatKhau.Text = nho.MatKhau;
                 cbxRemember.Checked = true;
             }
         }
@@ -44,7 +44,7 @@ namespace QLST
             }
             else
             {
-                var check = context.NguoiDungs.SingleOrDefault(p => p.IDNhanVien.Equals(tenDangNhap));
+                var check = context.NguoiDungs.SingleOrDefault(p => p.TaiKhoan.Equals(tenDangNhap));
                 if(check == null)
                 {
                     MessageBox.Show("Tài khoản không tồn tại!!!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -56,24 +56,22 @@ namespace QLST
                 }
                 else
                 {
-                    if(cbxRemember.Checked == true && context.NhoMKs.SingleOrDefault()==null)
+                    if(cbxRemember.Checked == true && context.NguoiDungs.SingleOrDefault( p => p.NhoMK == 1) == null)
                     {
-                        NhoMK nho = new NhoMK();
-                        nho.TDN = check.IDNhanVien;
-                        nho.MK = check.MatKhau;
-                        context.NhoMKs.InsertOnSubmit(nho);
+                        var temp = context.NguoiDungs.SingleOrDefault(p => p.TaiKhoan == txtTenDangNhap.Text);
+                        _ = temp.NhoMK == 1;
                         context.SubmitChanges();
                     }
                     else
                     {
-                        var nho = context.NhoMKs.SingleOrDefault();
+                        var nho = context.NguoiDungs.SingleOrDefault(p => p.NhoMK == 1);
                         if(nho != null)
                         {
-                            context.NhoMKs.DeleteOnSubmit(nho);
-                            context.SubmitChanges();
+                            _ = nho.NhoMK == 0;
+
                         }
                     }
-                    frmGiaodien frm = new frmGiaodien(check.IDNhanVien);
+                    frmGiaodien frm = new frmGiaodien();
                     frm.Show();
                     this.Hide();
                 }

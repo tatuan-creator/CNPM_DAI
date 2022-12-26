@@ -223,6 +223,8 @@ namespace QLST.Models
 		
 		private string _MatKhau;
 		
+		private System.Nullable<int> _NhoMK;
+		
 		private EntityRef<ChucVuNV> _ChucVuNV;
 		
     #region Extensibility Method Definitions
@@ -247,6 +249,8 @@ namespace QLST.Models
     partial void OnTaiKhoanChanged();
     partial void OnMatKhauChanging(string value);
     partial void OnMatKhauChanged();
+    partial void OnNhoMKChanging(System.Nullable<int> value);
+    partial void OnNhoMKChanged();
     #endregion
 		
 		public NguoiDung()
@@ -435,6 +439,26 @@ namespace QLST.Models
 					this._MatKhau = value;
 					this.SendPropertyChanged("MatKhau");
 					this.OnMatKhauChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhoMK", DbType="Int")]
+		public System.Nullable<int> NhoMK
+		{
+			get
+			{
+				return this._NhoMK;
+			}
+			set
+			{
+				if ((this._NhoMK != value))
+				{
+					this.OnNhoMKChanging(value);
+					this.SendPropertyChanging();
+					this._NhoMK = value;
+					this.SendPropertyChanged("NhoMK");
+					this.OnNhoMKChanged();
 				}
 			}
 		}

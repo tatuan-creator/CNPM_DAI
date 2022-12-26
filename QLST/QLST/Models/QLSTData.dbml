@@ -18,6 +18,7 @@
       <Column Name="NgayVaoLam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="TaiKhoan" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="MatKhau" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NhoMK" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="ChucVuNV_NguoiDung" Member="ChucVuNV" ThisKey="ChucVu" OtherKey="IDChucVu" Type="ChucVuNV" IsForeignKey="true" />
     </Type>
   </Table>

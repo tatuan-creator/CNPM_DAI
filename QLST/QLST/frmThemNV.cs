@@ -28,7 +28,7 @@ namespace QLST
         private void frmCapnhatNV_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'qLSLDataSet.ChucVu' table. You can move, or remove it, as needed.
-            var datacmbChucVu = context.ChucVus.ToList();
+            var datacmbChucVu = context.ChucVuNVs.ToList();
             cmbChucVu.DataSource = datacmbChucVu;
             cmbChucVu.DisplayMember = "TenChucVu";
             cmbChucVu.ValueMember = "MaChucVu";
@@ -53,8 +53,8 @@ namespace QLST
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             NguoiDung nguoidung = new NguoiDung();
-            nguoidung.IDNhanVien = txtMaNV.Text;
-            nguoidung.Ten = txtHoTen.Text;
+            nguoidung.TaiKhoan = txtMaNV.Text;
+            nguoidung.HoTen = txtHoTen.Text;
             nguoidung.NgaySinh = dtpBirthday.Value;
             nguoidung.ChucVu = cmbChucVu.SelectedIndex +1;
             nguoidung.GioiTinh = comboSex.SelectedIndex;
