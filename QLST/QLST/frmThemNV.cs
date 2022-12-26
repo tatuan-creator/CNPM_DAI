@@ -31,7 +31,7 @@ namespace QLST
             var datacmbChucVu = context.ChucVuNVs.ToList();
             cmbChucVu.DataSource = datacmbChucVu;
             cmbChucVu.DisplayMember = "TenChucVu";
-            cmbChucVu.ValueMember = "MaChucVu";
+            cmbChucVu.ValueMember = "IDChucVu";
         }
 
         private void btnCheckID_Click(object sender, EventArgs e)

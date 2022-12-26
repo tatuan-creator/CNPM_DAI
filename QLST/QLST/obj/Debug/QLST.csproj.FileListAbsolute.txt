@@ -57,3 +57,4 @@ C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.GenerateResource
 C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.exe
 C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.pdb
+C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmNhanvien.resources

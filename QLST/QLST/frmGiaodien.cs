@@ -59,5 +59,12 @@ namespace QLST
             obj.Show();
             this.Hide();    
         }
+
+        private void MemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanvien frm = new frmNhanvien();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
