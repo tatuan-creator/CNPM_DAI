@@ -225,6 +225,8 @@ namespace QLST.Models
 		
 		private System.Nullable<int> _NhoMK;
 		
+		private System.Nullable<int> _isActive;
+		
 		private EntityRef<ChucVuNV> _ChucVuNV;
 		
     #region Extensibility Method Definitions
@@ -251,6 +253,8 @@ namespace QLST.Models
     partial void OnMatKhauChanged();
     partial void OnNhoMKChanging(System.Nullable<int> value);
     partial void OnNhoMKChanged();
+    partial void OnisActiveChanging(System.Nullable<int> value);
+    partial void OnisActiveChanged();
     #endregion
 		
 		public NguoiDung()
@@ -459,6 +463,26 @@ namespace QLST.Models
 					this._NhoMK = value;
 					this.SendPropertyChanged("NhoMK");
 					this.OnNhoMKChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isActive", DbType="Int")]
+		public System.Nullable<int> isActive
+		{
+			get
+			{
+				return this._isActive;
+			}
+			set
+			{
+				if ((this._isActive != value))
+				{
+					this.OnisActiveChanging(value);
+					this.SendPropertyChanging();
+					this._isActive = value;
+					this.SendPropertyChanged("isActive");
+					this.OnisActiveChanged();
 				}
 			}
 		}

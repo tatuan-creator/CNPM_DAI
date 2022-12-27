@@ -8,17 +8,17 @@
         <elementListCompartment Id="471177a3-c39d-461c-a19e-e07b6a94c784" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="6dd6afa3-81e8-4022-9ef7-7ba5347fa9a1" absoluteBounds="5.375, 1.5, 2, 2.7324039713541666">
+    <classShape Id="26c14d9b-d0b4-4f50-bc9f-212c33eefc6b" absoluteBounds="5.5, 1.625, 2, 2.9247054036458331">
       <DataClassMoniker Name="/QLSTDataDataContext/NguoiDung" />
       <nestedChildShapes>
-        <elementListCompartment Id="a7d4df51-35c6-442e-a1bb-8cab024b3c44" absoluteBounds="5.39, 1.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5a00760c-1678-4937-9dc7-b6350f917c8f" absoluteBounds="5.515, 2.085, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (5.375 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (5.5 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/QLSTDataDataContext/ChucVuNV/ChucVuNV_NguoiDung" />
       <nodes>
         <classShapeMoniker Id="2ff6afdb-4ab1-4c58-8058-0d17d1d95f85" />
-        <classShapeMoniker Id="6dd6afa3-81e8-4022-9ef7-7ba5347fa9a1" />
+        <classShapeMoniker Id="26c14d9b-d0b4-4f50-bc9f-212c33eefc6b" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>
