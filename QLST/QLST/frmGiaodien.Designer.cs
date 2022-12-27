@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiaodien));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.HomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CashierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsCashier = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsQuanLy = new System.Windows.Forms.ToolStripMenuItem();
             this.NCCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GuestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HanghoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RepositoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsRepo = new System.Windows.Forms.ToolStripMenuItem();
             this.NhaphangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TrahangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsReport = new System.Windows.Forms.ToolStripMenuItem();
             this.doanhThuCuốiNgàyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchPhiếuNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchPhiếuTrảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AccmanagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsAccount = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangePWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SignOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -63,11 +63,11 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.HomeToolStripMenuItem,
-            this.CashierToolStripMenuItem,
-            this.ManagerToolStripMenuItem,
-            this.RepositoryToolStripMenuItem,
-            this.ReportToolStripMenuItem,
-            this.AccmanagementToolStripMenuItem,
+            this.mnsCashier,
+            this.mnsQuanLy,
+            this.mnsRepo,
+            this.mnsReport,
+            this.mnsAccount,
             this.SignOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -83,24 +83,24 @@
             this.HomeToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.HomeToolStripMenuItem.Text = "Trang chủ ";
             // 
-            // CashierToolStripMenuItem
+            // mnsCashier
             // 
-            this.CashierToolStripMenuItem.Name = "CashierToolStripMenuItem";
-            this.CashierToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-            this.CashierToolStripMenuItem.Text = "Thu ngân";
-            this.CashierToolStripMenuItem.Click += new System.EventHandler(this.CashierToolStripMenuItem_Click);
+            this.mnsCashier.Name = "mnsCashier";
+            this.mnsCashier.Size = new System.Drawing.Size(88, 24);
+            this.mnsCashier.Text = "Thu ngân";
+            this.mnsCashier.Click += new System.EventHandler(this.CashierToolStripMenuItem_Click);
             // 
-            // ManagerToolStripMenuItem
+            // mnsQuanLy
             // 
-            this.ManagerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsQuanLy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NCCToolStripMenuItem,
             this.GuestToolStripMenuItem,
             this.MemberToolStripMenuItem,
             this.HanghoaToolStripMenuItem,
             this.BillToolStripMenuItem});
-            this.ManagerToolStripMenuItem.Name = "ManagerToolStripMenuItem";
-            this.ManagerToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
-            this.ManagerToolStripMenuItem.Text = "Quản lý";
+            this.mnsQuanLy.Name = "mnsQuanLy";
+            this.mnsQuanLy.Size = new System.Drawing.Size(76, 24);
+            this.mnsQuanLy.Text = "Quản lý";
             // 
             // NCCToolStripMenuItem
             // 
@@ -134,36 +134,36 @@
             this.BillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.BillToolStripMenuItem.Text = "Hóa đơn";
             // 
-            // RepositoryToolStripMenuItem
+            // mnsRepo
             // 
-            this.RepositoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsRepo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NhaphangToolStripMenuItem,
             this.TrahangToolStripMenuItem});
-            this.RepositoryToolStripMenuItem.Name = "RepositoryToolStripMenuItem";
-            this.RepositoryToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
-            this.RepositoryToolStripMenuItem.Text = "Kho hàng";
+            this.mnsRepo.Name = "mnsRepo";
+            this.mnsRepo.Size = new System.Drawing.Size(89, 24);
+            this.mnsRepo.Text = "Kho hàng";
             // 
             // NhaphangToolStripMenuItem
             // 
             this.NhaphangToolStripMenuItem.Name = "NhaphangToolStripMenuItem";
-            this.NhaphangToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.NhaphangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.NhaphangToolStripMenuItem.Text = "Nhập hàng";
             // 
             // TrahangToolStripMenuItem
             // 
             this.TrahangToolStripMenuItem.Name = "TrahangToolStripMenuItem";
-            this.TrahangToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.TrahangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.TrahangToolStripMenuItem.Text = "Trả hàng";
             // 
-            // ReportToolStripMenuItem
+            // mnsReport
             // 
-            this.ReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsReport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.doanhThuCuốiNgàyToolStripMenuItem,
             this.danhSáchPhiếuNhậpToolStripMenuItem,
             this.danhSáchPhiếuTrảToolStripMenuItem});
-            this.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem";
-            this.ReportToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
-            this.ReportToolStripMenuItem.Text = "Báo cáo";
+            this.mnsReport.Name = "mnsReport";
+            this.mnsReport.Size = new System.Drawing.Size(77, 24);
+            this.mnsReport.Text = "Báo cáo";
             // 
             // doanhThuCuốiNgàyToolStripMenuItem
             // 
@@ -183,18 +183,18 @@
             this.danhSáchPhiếuTrảToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.danhSáchPhiếuTrảToolStripMenuItem.Text = "Danh sách phiếu trả";
             // 
-            // AccmanagementToolStripMenuItem
+            // mnsAccount
             // 
-            this.AccmanagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsAccount.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangePWToolStripMenuItem});
-            this.AccmanagementToolStripMenuItem.Name = "AccmanagementToolStripMenuItem";
-            this.AccmanagementToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
-            this.AccmanagementToolStripMenuItem.Text = "Quản lý tài khoản";
+            this.mnsAccount.Name = "mnsAccount";
+            this.mnsAccount.Size = new System.Drawing.Size(144, 24);
+            this.mnsAccount.Text = "Quản lý tài khoản";
             // 
             // ChangePWToolStripMenuItem
             // 
             this.ChangePWToolStripMenuItem.Name = "ChangePWToolStripMenuItem";
-            this.ChangePWToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.ChangePWToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.ChangePWToolStripMenuItem.Text = "Đổi mật khẩu";
             this.ChangePWToolStripMenuItem.Click += new System.EventHandler(this.ChangePWToolStripMenuItem_Click);
             // 
@@ -211,7 +211,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 526);
             this.panel1.TabIndex = 1;
@@ -232,7 +232,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1067, 524);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -249,7 +249,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmGiaodien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGiaodien";
@@ -266,21 +266,21 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem CashierToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsCashier;
+        private System.Windows.Forms.ToolStripMenuItem mnsQuanLy;
         private System.Windows.Forms.ToolStripMenuItem NCCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem GuestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HanghoaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem BillToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem RepositoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsRepo;
         private System.Windows.Forms.ToolStripMenuItem NhaphangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TrahangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsReport;
         private System.Windows.Forms.ToolStripMenuItem doanhThuCuốiNgàyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhSáchPhiếuNhậpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhSáchPhiếuTrảToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AccmanagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsAccount;
         private System.Windows.Forms.ToolStripMenuItem SignOutToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem HomeToolStripMenuItem;

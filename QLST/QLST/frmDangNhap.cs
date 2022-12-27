@@ -71,7 +71,7 @@ namespace QLST
 
                         }
                     }
-                    frmGiaodien frm = new frmGiaodien();
+                    frmGiaodien frm = new frmGiaodien(check.IDNhanVien);
                     frm.Show();
                     this.Hide();
                 }

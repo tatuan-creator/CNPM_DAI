@@ -37,15 +37,15 @@ namespace QLST
         private void btnCheckID_Click(object sender, EventArgs e)
         {
             string ID = txtMaNV.Text;
-            var check = context.NguoiDungs.SingleOrDefault(p => p.IDNhanVien.Equals(ID));
+            var check = context.NguoiDungs.SingleOrDefault(p => p.TaiKhoan.Equals(ID));
             if(check != null)
             {
-                MessageBox.Show("Mã nhân viên đã tồn tại!", "Cảnh báo", MessageBoxButtons.OK);
+                MessageBox.Show("Tài khoản nhân viên đã tồn tại!", "Cảnh báo", MessageBoxButtons.OK);
                 txtMaNV.Clear();
             }
             else
             {
-                MessageBox.Show("Mã nhân viên hợp lệ!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Tài khoản nhân viên hợp lệ!", "Thông báo", MessageBoxButtons.OK);
                 btnCheckID.Enabled= false;
             }
         }
@@ -68,6 +68,8 @@ namespace QLST
             {
                 context.NguoiDungs.InsertOnSubmit(nguoidung);
                 context.SubmitChanges();
+                MessageBox.Show("Thêm nhân viên thành công", "Thông báo", MessageBoxButtons.OK);
+                this.frmCapnhatNV_Load(sender, e);
             }
         }
     }

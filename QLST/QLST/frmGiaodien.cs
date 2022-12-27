@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLST.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +13,36 @@ namespace QLST
 {
     public partial class frmGiaodien : Form
     {
+        private QLSTDataDataContext context = new QLSTDataDataContext();
         public frmGiaodien()
         {
             InitializeComponent();
         }
-        public frmGiaodien(String ID)
+        public frmGiaodien(int ID)
         {
             InitializeComponent();
+
+            var checkQuyen = context.NguoiDungs.SingleOrDefault(p => p.IDNhanVien.Equals(ID));
+            if (checkQuyen.ChucVuNV.TenChucVu.Equals("Cashier"))
+            {
+                mnsReport.Enabled = false;
+                mnsAccount.Enabled = false;
+                mnsQuanLy.Enabled = false;
+                mnsRepo.Enabled = false;
+            }else if (checkQuyen.ChucVuNV.TenChucVu.Equals("Ke toan"))
+            {
+                mnsCashier.Enabled = false;
+                mnsAccount.Enabled = false;
+                mnsQuanLy.Enabled = false;
+                mnsRepo.Enabled = false;
+            }
+            if (checkQuyen.ChucVuNV.TenChucVu.Equals("Thu kho"))
+            {
+                mnsCashier.Enabled = false;
+                mnsReport.Enabled = false;
+                mnsAccount.Enabled = false;
+                mnsQuanLy.Enabled = false;
+            }
         }
         private void button2_Click(object sender, EventArgs e)
         {
