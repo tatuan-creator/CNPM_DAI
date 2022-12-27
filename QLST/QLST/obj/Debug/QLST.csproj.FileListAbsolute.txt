@@ -58,3 +58,5 @@ C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.csproj.CoreCompileInput
 C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.exe
 C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.pdb
 C:\Users\Admin\Desktop\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmNhanvien.resources
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmNhanvien.resources
+C:\Users\PC\Desktop\doan\CNPM_DAI\QLST\QLST\obj\Debug\QLST.frmSuaNguoiDung.resources

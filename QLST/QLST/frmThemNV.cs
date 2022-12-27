@@ -72,5 +72,12 @@ namespace QLST
                 this.frmCapnhatNV_Load(sender, e);
             }
         }
+
+        private void pibBack2_Click(object sender, EventArgs e)
+        {
+            frmNhanvien obj = new frmNhanvien();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

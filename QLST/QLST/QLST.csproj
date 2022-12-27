@@ -65,6 +65,12 @@
     <Compile Include="frmNhanvien.Designer.cs">
       <DependentUpon>frmNhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSuaNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuaNguoiDung.Designer.cs">
+      <DependentUpon>frmSuaNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanvien.resx">
       <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuaNguoiDung.resx">
+      <DependentUpon>frmSuaNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemNV.resx">
       <DependentUpon>frmThemNV.cs</DependentUpon>
