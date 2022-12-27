@@ -93,5 +93,17 @@ namespace QLST
                 row = this.dgvNhanVien.Rows[e.RowIndex];
             }
         }
+
+        private void btnFix_Click(object sender, EventArgs e)
+        {
+            string m = row.Cells[1].Value.ToString();
+            var check = context.NguoiDungs.SingleOrDefault(p => p.TaiKhoan.Equals(m));
+            if (check != null)
+            {
+                frmSuaNguoiDung frm = new frmSuaNguoiDung(check.IDNhanVien);
+                frm.Show();
+                this.Hide();
+            }
+        }
     }
 }
